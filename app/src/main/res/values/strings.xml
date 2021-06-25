@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DoCare</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="login">Login</string>
+    <string name="new_user">New User?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="background">Background</string>
+    <string name="logo">LOGO</string>
+    <string name="oxygen">Oxygen</string>
+    <string name="beds">Beds</string>
+    <string name="consultation">Consultation</string>
+    <string name="blood_banks">Blood Banks</string>
+    <string name="ambulance">Ambulance</string>
+    <string name="hospitals">Hospitals</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="verify">Verify</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="settings">Settings</string>
+    <string name="about_us">About Us</string>
+    <string name="help">Help</string>
+</resources>
