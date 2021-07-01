@@ -35,27 +35,27 @@
         app:layout_constraintTop_toBottomOf="@+id/logo_signup"
         app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:id="@+id/signup_contact2"
-        android:layout_width="285dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="252dp"
-        android:background="@drawable/textbackground"
-        android:ems="10"
-        android:hint="@string/contact_number"
-        android:inputType="number"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.427"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_signup"
-        app:layout_constraintVertical_bias="0.0" />
+<!--    <EditText-->
+<!--        android:id="@+id/signup_contact2"-->
+<!--        android:layout_width="255dp"-->
+<!--        android:layout_height="68dp"-->
+<!--        android:layout_marginTop="252dp"-->
+<!--        android:background="@drawable/textbackground"-->
+<!--        android:ems="10"-->
+<!--        android:hint="@string/contact_number"-->
+<!--        android:inputType="number"-->
+<!--        android:textAlignment="center"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.333"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/logo_signup"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
 
-    <!--    <EditText-->
+<!--    <EditText-->
 <!--        android:id="@+id/signup_contact3"-->
-<!--        android:layout_width="285dp"-->
-<!--        android:layout_height="64dp"-->
+<!--        android:layout_width="255dp"-->
+<!--        android:layout_height="68dp"-->
 <!--        android:layout_marginTop="348dp"-->
 <!--        android:background="@drawable/textbackground"-->
 <!--        android:ems="10"-->
@@ -64,7 +64,7 @@
 <!--        android:textAlignment="center"-->
 <!--        app:layout_constraintBottom_toTopOf="@+id/signup_submit"-->
 <!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.427"-->
+<!--        app:layout_constraintHorizontal_bias="0.333"-->
 <!--        app:layout_constraintStart_toStartOf="parent"-->
 <!--        app:layout_constraintTop_toBottomOf="@+id/logo_signup"-->
 <!--        app:layout_constraintVertical_bias="0.0" />-->
@@ -73,36 +73,37 @@
         android:id="@+id/signup_submit"
         android:layout_width="178dp"
         android:layout_height="62dp"
+        android:layout_marginBottom="48dp"
         android:background="@drawable/buttonbackdround"
         android:text="@string/submit"
         android:textAlignment="center"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_signup"
-        app:layout_constraintVertical_bias="0.735" />
-
-    <EditText
-        android:id="@+id/signup_contact1"
-        android:layout_width="285dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="152dp"
-        android:background="@drawable/textbackground"
-        android:ems="10"
-        android:hint="@string/contact_number"
-        android:inputType="number"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/signup_contact2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.427"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_signup"
-        app:layout_constraintVertical_bias="0.035" />
+        app:layout_constraintTop_toBottomOf="@+id/signup_name"
+        app:layout_constraintVertical_bias="0.228" />
 
 
-    <!--    <ImageView-->
+    <!--    <EditText-->
+<!--        android:id="@+id/signup_contact1"-->
+<!--        android:layout_width="255dp"-->
+<!--        android:layout_height="68dp"-->
+<!--        android:layout_marginTop="152dp"-->
+<!--        android:background="@drawable/textbackground"-->
+<!--        android:ems="10"-->
+<!--        android:hint="@string/contact_number"-->
+<!--        android:inputType="number"-->
+<!--        android:textAlignment="center"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/signup_contact2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.333"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/logo_signup"-->
+<!--        app:layout_constraintVertical_bias="0.031" />-->
+
+<!--    <ImageView-->
 <!--        android:id="@+id/signup_contact_image1"-->
 <!--        android:layout_width="40dp"-->
 <!--        android:layout_height="39dp"-->
@@ -113,6 +114,7 @@
 <!--        app:layout_constraintStart_toEndOf="@+id/signup_contact1"-->
 <!--        app:layout_constraintTop_toBottomOf="@+id/signup_name"-->
 <!--        app:layout_constraintVertical_bias="0.464"-->
+<!--        android:onClick="openContacts"-->
 <!--        app:srcCompat="@drawable/ic_baseline_contacts_24" />-->
 
 <!--    <ImageView-->
@@ -122,10 +124,11 @@
 <!--        android:layout_marginEnd="32dp"-->
 <!--        app:layout_constraintBottom_toTopOf="@+id/signup_contact_image3"-->
 <!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintHorizontal_bias="0.75"-->
 <!--        app:layout_constraintStart_toEndOf="@+id/signup_contact2"-->
 <!--        app:layout_constraintTop_toBottomOf="@+id/signup_contact_image1"-->
-<!--        app:layout_constraintVertical_bias="0.516"-->
+<!--        app:layout_constraintVertical_bias="0.517"-->
+<!--        android:onClick="openContacts"-->
 <!--        app:srcCompat="@drawable/ic_baseline_contacts_24" />-->
 
 <!--    <ImageView-->
@@ -133,11 +136,12 @@
 <!--        android:layout_width="40dp"-->
 <!--        android:layout_height="39dp"-->
 <!--        android:layout_marginEnd="32dp"-->
-<!--        android:layout_marginBottom="32dp"-->
+<!--        android:layout_marginBottom="44dp"-->
 <!--        app:layout_constraintBottom_toTopOf="@+id/signup_submit"-->
 <!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintHorizontal_bias="0.75"-->
 <!--        app:layout_constraintStart_toEndOf="@+id/signup_contact3"-->
+<!--        android:onClick="openContacts"-->
 <!--        app:srcCompat="@drawable/ic_baseline_contacts_24" />-->
 
 

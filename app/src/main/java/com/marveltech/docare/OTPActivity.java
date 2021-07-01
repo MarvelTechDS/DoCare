@@ -25,6 +25,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 public class OTPActivity extends AppCompatActivity {
@@ -120,14 +121,14 @@ public class OTPActivity extends AppCompatActivity {
                         if (task.isSuccessful())
                         {
                             Toast.makeText(OTPActivity.this, "Login Successfull", Toast.LENGTH_SHORT).show();
-                            String uid = firebaseAuth.getCurrentUser().getUid();
-                            Query checkid = reference.orderByChild("Uid").equalTo(uid);
+                            String uid = Objects.requireNonNull(firebaseAuth.getCurrentUser()).getUid();
+                            Query checkid = reference.orderByChild("uid").equalTo(uid);
                             checkid.addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override
                                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                                     if (snapshot.exists())
                                     {
-                                        startActivity(new Intent(getApplicationContext(),HomeActivity2.class));
+                                        startActivity(new Intent(OTPActivity.this,HomeActivity2.class));
                                     }
                                     else
                                     {
