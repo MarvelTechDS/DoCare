@@ -15,8 +15,7 @@
         android:roundIcon="@drawable/docareicon"
         android:supportsRtl="true"
         android:theme="@style/Theme.DoCare">
-
-
+        <activity android:name=".BedSecondActivity"></activity>
         <activity
             android:name=".BedsActivity"
             android:parentActivityName=".HomeActivity2" />

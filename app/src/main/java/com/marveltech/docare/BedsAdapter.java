@@ -1,6 +1,9 @@
 package com.marveltech.docare;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,6 +38,18 @@ public class BedsAdapter extends RecyclerView.Adapter<BedsAdapter.bedsViewHolder
             holder.address.setText(data.getAddress());
             holder.location.setText(data.getLocation());
             holder.hospitalname.setText(data.getHospitalname());
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(context,BedSecondActivity.class);
+                    intent.putExtra("hospitalname",data.getHospitalname());
+                    intent.putExtra("location",data.getLocation());
+                    intent.putExtra("address",data.getAddress());
+                    intent.putExtra("phonenumber",data.getPhonenumber());
+                    intent.putExtra("availability",data.getBedsavaibility());
+                    context.startActivity(intent);
+                }
+            });
     }
 
     @Override
@@ -48,7 +63,7 @@ public class BedsAdapter extends RecyclerView.Adapter<BedsAdapter.bedsViewHolder
             super(itemView);
             hospitalname = itemView.findViewById(R.id.beds_hospitalname);
             location = itemView.findViewById(R.id.beds_location);
-            address =itemView.findViewById(R.id.hospital_address);
+            address = itemView.findViewById(R.id.hospital_address);
             phonenumber = itemView.findViewById(R.id.bed_hospital_phone);
             beds_availability = itemView.findViewById(R.id.beds_available);
         }

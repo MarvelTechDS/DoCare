@@ -62,26 +62,7 @@ FirebaseAuth firebaseAuth;
                         startActivity(new Intent(HomeActivity2.this,BedsActivity.class));
                     }
                 });
-//        if (ContextCompat.checkSelfPermission(HomeActivity2.this, Manifest.permission.INTERNET) != PackageManager.PERMISSION_GRANTED)
-//        {
-//            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.INTERNET},INTERNET_CODE_PERMISSION);
-//        }
-//        if (ContextCompat.checkSelfPermission(HomeActivity2.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED)
-//        {
-//            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.CALL_PHONE},CALL_CODE_PERMISSION);
-//        }
-//        if (ContextCompat.checkSelfPermission(HomeActivity2.this, Manifest.permission.FOREGROUND_SERVICE) != PackageManager.PERMISSION_GRANTED)
-//        {
-//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-//                ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.FOREGROUND_SERVICE},FOREGROUND_CODE_PERMISSION);
-//            }
-//        }
-//        if (ContextCompat.checkSelfPermission(HomeActivity2.this, Manifest.permission.ACCESS_BACKGROUND_LOCATION) != PackageManager.PERMISSION_GRANTED)
-//        {
-//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-//                ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_BACKGROUND_LOCATION},LOCATION_CODE_PERMISSION);
-//            }
-//        }
+
     }
 
     private void checkUser() {
