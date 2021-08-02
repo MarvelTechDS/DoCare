@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "16110285146",
+    "firebase_url": "https://docare-7bfad-default-rtdb.firebaseio.com",
     "project_id": "docare-7bfad",
     "storage_bucket": "docare-7bfad.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "16110285146-h084qp8t6t9s1nm7kqtr0ki5ti6gt8tj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marveltech.docare",
+            "certificate_hash": "cae7f8627e827891caaba7cb7e3c48ad48c11c5a"
+          }
+        },
         {
           "client_id": "16110285146-2ra7lgdtj2i2b610f782huckn9uu644h.apps.googleusercontent.com",
           "client_type": 3

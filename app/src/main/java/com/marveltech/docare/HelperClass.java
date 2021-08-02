@@ -11,8 +11,7 @@ public class HelperClass {
             this.name = name;
             this.phone = phone;
             this.uid = uid;
-//            this.number1 = number1;
-//            this.number2 = number2;
+
 
         }
 
@@ -40,21 +39,7 @@ public class HelperClass {
             this.uid = uid;
         }
 
-//    public String getNumber1() {
-//        return number1;
-//    }
-//
-//    public void setNumber1(String number1) {
-//        this.number1 = number1;
-//    }
-//
-//    public String getNumber2() {
-//        return number2;
-//    }
-//
-//    public void setNumber2(String number2) {
-//        this.number2 = number2;
-//    }
+
 
 }
 

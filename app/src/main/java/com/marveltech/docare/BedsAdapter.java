@@ -38,15 +38,16 @@ public class BedsAdapter extends RecyclerView.Adapter<BedsAdapter.bedsViewHolder
             holder.address.setText(data.getAddress());
             holder.location.setText(data.getLocation());
             holder.hospitalname.setText(data.getHospitalname());
+            int avail = data.getBedsavaibility();
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(context,BedSecondActivity.class);
                     intent.putExtra("hospitalname",data.getHospitalname());
                     intent.putExtra("location",data.getLocation());
-                    intent.putExtra("address",data.getAddress());
-                    intent.putExtra("phonenumber",data.getPhonenumber());
-                    intent.putExtra("availability",data.getBedsavaibility());
+//                    intent.putExtra("address",data.getAddress());
+//                    intent.putExtra("phonenumber",data.getPhonenumber());
+                    intent.putExtra("availability",avail);
                     context.startActivity(intent);
                 }
             });

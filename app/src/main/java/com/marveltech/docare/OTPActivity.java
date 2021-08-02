@@ -103,7 +103,9 @@ public class OTPActivity extends AppCompatActivity {
 
         @Override
         public void onVerificationFailed(@NonNull FirebaseException e) {
-            Toast.makeText(OTPActivity.this, "Verification Failed. Try again.......", Toast.LENGTH_SHORT).show();
+            Toast.makeText(OTPActivity.this, ""+e, Toast.LENGTH_SHORT).show();
+            progressDialog.dismiss();
+            startActivity(new Intent(OTPActivity.this,LoginActivity.class));
         }
     };
 

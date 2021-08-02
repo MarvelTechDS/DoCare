@@ -1,7 +1,8 @@
 package com.marveltech.docare;
 
 public class BedsData {
-    String hospitalname,location,bedsavaibility,phonenumber,address;
+    String hospitalname,location,phonenumber,address;
+    int bedsavaibility;
 
     public String getHospitalname() {
         return hospitalname;
@@ -11,7 +12,7 @@ public class BedsData {
         return location;
     }
 
-    public String getBedsavaibility() {
+    public int getBedsavaibility() {
         return bedsavaibility;
     }
 
