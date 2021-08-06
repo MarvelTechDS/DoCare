@@ -33,7 +33,7 @@ private static final int SPLASH_SCREEN_TIMEOUT = 3000;
             @Override
             public void run() {
                 if (FirebaseAuth.getInstance().getCurrentUser()!= null) {
-                    startActivity(new Intent(MainActivity.this,HomeActivity2.class));
+                    startActivity(new Intent(MainActivity.this,HomeActivity.class));
                     finish();
                 }
                 else

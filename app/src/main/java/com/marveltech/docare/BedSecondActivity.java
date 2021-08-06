@@ -29,7 +29,7 @@ TextView hospitalname_tv,bedsAvail_tv,location_tv;
 EditText pname_et,page_et,pno_et;
 RadioGroup gender_radiobtn;
 String pname,page,gender,uid,phone,hospitalname,location;
-int bedsavailability;
+String bedsavailability;
 String refernceId;
 Dialog dialog;
 DD4YouConfig dd4YouConfig;
@@ -55,7 +55,7 @@ ProgressDialog progressDialog;
         progressDialog.setTitle("Booking......");
 
         hospitalname = getIntent().getStringExtra("hospitalname");
-        bedsavailability = getIntent().getIntExtra("availability",0);
+        bedsavailability = getIntent().getStringExtra("availability");
         location = getIntent().getStringExtra("location");
         hospitalname_tv.setText(hospitalname);
         bedsAvail_tv.setText(bedsavailability);
@@ -66,14 +66,14 @@ ProgressDialog progressDialog;
             public void onClick(View v) {
                 progressDialog.show();
                 getGender();
-                if (bedsavailability != 0) {
+                if (TextUtils.isEmpty(bedsavailability)) {
                     if (!TextUtils.isEmpty(pname_et.getText().toString())
                             && !TextUtils.isEmpty(page_et.getText().toString())
                             && !TextUtils.isEmpty(pno_et.getText().toString())
                             && !TextUtils.isEmpty(gender)) {
                         dialog.setContentView(R.layout.customdialog_success);
                         dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.successdialog_background));
-                        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                        dialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
                         dialog.setCancelable(false);
                         dialog.getWindow().getAttributes().windowAnimations = R.style.animation;
                         TextView ok = dialog.findViewById(R.id.ok_customdialog_success);

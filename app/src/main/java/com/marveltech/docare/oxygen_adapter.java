@@ -1,6 +1,7 @@
 package com.marveltech.docare;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,7 +36,21 @@ public class oxygen_adapter extends RecyclerView.Adapter<oxygen_adapter.oxygenVi
         holder.oxygensupplyName.setText(data.getOxygensupplyname());
         holder.location_oxygen.setText(data.getLocation());
         holder.oxygen_availability.setText(data.getAvaibility());
-        holder.PhoneNnumber_oxygen.setText(data.getPhonenumber());
+//        holder.PhoneNnumber_oxygen.setText(data.getPhonenumber());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(context,OxygenSecondActivity.class);
+                i.putExtra("oxygensupplyname",data.getOxygensupplyname());
+                i.putExtra("location",data.getLocation());
+                i.putExtra("avail",data.getAvaibility());
+                i.putExtra("address",data.getAddress());
+                i.putExtra("phonenumber",data.getPhonenumber());
+                i.putExtra("id",data.getOxygen_id());
+                context.startActivity(i);
+
+            }
+        });
     }
 
     @Override
@@ -49,15 +64,8 @@ public class oxygen_adapter extends RecyclerView.Adapter<oxygen_adapter.oxygenVi
             super(itemView);
             oxygensupplyName = itemView.findViewById(R.id.oxygen_supplyname);
             location_oxygen = itemView.findViewById(R.id.oxygen_location);
-            PhoneNnumber_oxygen = itemView.findViewById(R.id.oxygen_phone);
             oxygen_availability = itemView.findViewById(R.id.oxygen_available);
             oxygen_address = itemView.findViewById(R.id.oxygen_address);
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                }
-            });
         }
     }
 }

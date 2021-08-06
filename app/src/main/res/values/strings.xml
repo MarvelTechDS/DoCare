@@ -37,4 +37,8 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="iopennav">Open Navigation Drawer</string>
+    <string name="closenavigation">Close Navigation Drawer</string>
+    <string name="navbar">navbar</string>
+    <string name="todo">TODO</string>
 </resources>

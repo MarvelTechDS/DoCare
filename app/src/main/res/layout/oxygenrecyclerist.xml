@@ -59,25 +59,7 @@
             android:layout_marginTop="100sp"
             android:layout_marginStart="55sp"/>
 
-        <ImageView
-            android:id="@+id/oxygen_phonenumber_img"
-            android:layout_width="38dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="15sp"
-            android:layout_marginTop="150dp"
-            android:background="@color/background_dark"
-            android:layout_marginBottom="15sp"
-            app:srcCompat="@android:drawable/stat_sys_phone_call" />
 
-        <TextView
-            android:id="@+id/oxygen_phone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="150sp"
-            android:layout_marginStart="60sp"
-            android:layout_marginBottom="15sp"
-            android:text="Phone Number"
-            android:textSize="18sp" />
 
     <TextView
         android:id="@+id/oxygen_address"

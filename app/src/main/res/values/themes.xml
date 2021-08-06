@@ -1,18 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.DoCare" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.DoCare" parent="Theme.MaterialComponents.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/background_light</item>
         <item name="colorPrimaryVariant">@color/background_dark</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">#3AD8C9</item>
         <item name="colorSecondaryVariant">@color/background_light</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">@color/button_colors</item>
+        <item name="android:statusBarColor">@color/background</item>
         <!-- Customize your theme here. -->
         <item name="android:windowAnimationStyle">@style/animation</item>
+        <item name="itemBackground">@color/white</item>
     </style>
 <style name="animation">
     <item name="android:windowEnterAnimation">@android:anim/fade_in</item>

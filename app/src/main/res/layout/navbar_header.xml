@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:gravity="top"
+    android:padding="20dp">
+
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:src="@drawable/docareicon" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="50sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="DoCare"
+            android:textColor="#1691EF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Cares For You"
+            android:textColor="#EF2C2C"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+</LinearLayout>

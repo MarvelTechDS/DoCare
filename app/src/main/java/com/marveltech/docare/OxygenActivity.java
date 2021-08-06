@@ -30,7 +30,7 @@ public class OxygenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_oxygen);
         recyclerView = findViewById(R.id.oxygen_recycler);
         dialog = new ProgressDialog(this);
-        dialog.setTitle("Docare Loading");
+        dialog.setTitle("Docare ");
         dialog.setMessage("Fetching Data. Please wait..........");
         dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         dialog.show();

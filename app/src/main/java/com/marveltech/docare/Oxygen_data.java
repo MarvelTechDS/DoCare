@@ -1,7 +1,7 @@
 package com.marveltech.docare;
 
 public class Oxygen_data {
-    String oxygensupplyname,location,avaibility,phonenumber,address;
+    String oxygensupplyname,location,avaibility,phonenumber,address,oxygen_id;
 
     public String getOxygensupplyname() {
         return oxygensupplyname;
@@ -21,5 +21,9 @@ public class Oxygen_data {
 
     public String getAddress() {
         return address;
+    }
+
+    public String getOxygen_id() {
+        return oxygen_id;
     }
 }

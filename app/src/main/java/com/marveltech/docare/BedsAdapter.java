@@ -38,7 +38,8 @@ public class BedsAdapter extends RecyclerView.Adapter<BedsAdapter.bedsViewHolder
             holder.address.setText(data.getAddress());
             holder.location.setText(data.getLocation());
             holder.hospitalname.setText(data.getHospitalname());
-            int avail = data.getBedsavaibility();
+            String a  = data.getBedsavaibility();
+            int avail = Integer.parseInt(a);
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

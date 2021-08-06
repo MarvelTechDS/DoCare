@@ -2,9 +2,12 @@ package com.marveltech.docare;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.Manifest;
 import android.content.Intent;
@@ -18,6 +21,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -38,6 +42,9 @@ FirebaseAuth firebaseAuth;
     public static String contactnumber1,contactnumber2,contactnumber3;
     FirebaseDatabase database ;
     DatabaseReference reference ;
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
+    Toolbar toolbar;
     @RequiresApi(api = Build.VERSION_CODES.P)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +52,8 @@ FirebaseAuth firebaseAuth;
         setContentView(R.layout.activity_home2);
         firebaseAuth = FirebaseAuth.getInstance();
         checkUser();
-//        startService(new Intent(getApplicationContext(),BackgroundService.class));
+
+        //startService(new Intent(getApplicationContext(),BackgroundService.class));
         ActivityCompat.requestPermissions(this,
                 new String[]{Manifest.permission.INTERNET,Manifest.permission.FOREGROUND_SERVICE,Manifest.permission.CALL_PHONE,
                         Manifest.permission.ACCESS_BACKGROUND_LOCATION,Manifest.permission.SEND_SMS,Manifest.permission.READ_SMS},
@@ -59,7 +67,7 @@ FirebaseAuth firebaseAuth;
                 findViewById(R.id.home_beds).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        startActivity(new Intent(HomeActivity2.this,BedsActivity.class));
+                        startActivity(new Intent(HomeActivity2.this,AppointmentOrBooking.class));
                     }
                 });
 
@@ -124,6 +132,7 @@ FirebaseAuth firebaseAuth;
         }
 
     }
+
 
 //    @Override
 //    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
